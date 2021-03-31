@@ -1,0 +1,25 @@
+﻿<Window x:Class="Stock.WndAccepted"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stock"
+        mc:Ignorable="d"
+        Title="wndAccepted" Height="380" Width="500">
+    <Grid>
+        <Label Margin="10,0,0,0">Артикул</Label>
+        <TextBox x:Name="tbArticul" HorizontalAlignment="Left" Height="24" Margin="11,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Margin="10,45,0,0">Товар</Label>
+        <TextBox x:Name="tbGood" HorizontalAlignment="Left" Height="24" Margin="11,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Margin="10,90,0,0">Количество</Label>
+        <TextBox x:Name="tbQuantity" HorizontalAlignment="Left" Height="24" Margin="11,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Margin="10,135,0,0">Единица измерения</Label>
+        <TextBox x:Name="tbUnit" HorizontalAlignment="Left" Height="24" Margin="11,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Text="шт."/>
+        <Label Margin="10,180,0,0">Цена</Label>
+        <TextBox x:Name="tbPrice" HorizontalAlignment="Left" Height="24" Margin="11,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Margin="10,225,0,0" Content="Стоимость&#x9;&#x9;"/>
+        <TextBox x:Name="tbCost" HorizontalAlignment="Left" Height="24" Margin="11,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Button Content="OK" Name="btnOK" HorizontalAlignment="Left" Margin="11,301,0,0" VerticalAlignment="Top" Width="76" Click="BtnOK_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="132,301,0,0" VerticalAlignment="Top" Width="74" Click="btnCancel_Click"/>
+    </Grid>
+</Window>
